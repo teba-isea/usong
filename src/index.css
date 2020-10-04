@@ -1,0 +1,39 @@
+.lyrics-title{
+	position: relative;
+	display: block;
+	transition: all .3s ease
+}
+
+.lyrics-title::before{
+	content: '';
+	position: absolute;
+	background: #4bbe73;
+	width: 125px;
+	height: 3px;
+	color: #4bbe73;
+	top: 2rem;
+	animation: increase-width 1s 1 ease;
+
+}
+
+@keyframes increase-width {
+0%{
+	width: 0px
+}	
+
+100%{
+	width: 125px
+}
+}
+
+.form-control{
+	transition: all .3s ease;
+}
+
+.form-control:hover{
+	transform: scale(1.08);
+}
+
+.card-header{
+	animation: increase-width 1s 1 ease;
+}
